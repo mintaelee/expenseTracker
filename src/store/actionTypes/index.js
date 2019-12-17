@@ -1,0 +1,37 @@
+export const TOGGLE_LOADER = 'TOGGLE_LOADER'
+
+export const SIGN_UP_USER = 'SIGN_UP_USER'
+export const SIGN_UP_ERROR = 'SIGN_UP_ERROR'
+export const SET_USER = 'SET_USER'
+export const LOGOUT_USER = 'LOGOUT_USER'
+
+export const API_REQUEST = 'API_REQUEST'
+
+// Date Action Types
+export const GET_CURRENT_DATE = 'GET_CURRENT_DATE'
+export const SET_SELECTED_DATE = 'SET_SELECTED_DATE'
+export const SET_WEEK_DATE = 'SET_WEEK_DATE'
+export const DECREASE_MONTH = 'DECREASE_MONTH'
+export const INCREASE_MONTH = 'INCREASE_MONTH'
+export const DECREASE_WEEK = 'DECREASE_WEEK'
+export const INCREASE_WEEK = 'INCREASE_WEEK'
+
+// Modal Action Types
+export const TOGGLE_EXPENSE_MODAL = "TOGGLE_EXPENSE_MODAL";
+
+// Menu Action Types
+export const TOGGLE_MENU = 'TOGGLE_MENU'
+
+export const ADD_CATEGORY = 'CREATE_CATEGORY'
+export const SET_USER_CATEGORIES = 'SET_USER_CATEGORIES'
+
+export const TOGGLE_CALENDAR = 'TOGGLE_CALENDAR'
+export const ADD_EXPENSE = 'ADD_EXPENSE'
+export const REPLACE_EXPENSE = 'REPLACE_EXPENSE'
+export const REMOVE_EXPENSE = 'REMOVE_EXPENSE'
+export const SET_USER_EXPENSE = 'SET_USER_EXPENSE'
+
+export const HANDLE_UPLOAD_SUCCESS = 'HANDLE_UPLOAD_SUCCESS'
+export const HANDLE_UPLOAD_ERROR = 'HANDLE_UPLOAD_ERROR'
+
+export const EXPENSE_ERROR = 'EXPENSE_ERROR'

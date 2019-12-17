@@ -1,25 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Route, Switch } from 'react-router-dom'
+import PrivateRoute from './components/PrivateRoute/PrivateRoute'
 import './App.css';
 
+const Home = React.lazy(() => import('./components/pages/Home'))
+const Calendar = React.lazy(() => import('./components/Calendar/Calendar'))
+const Category = React.lazy(() => import('./components/Category/Category'))
+const File = React.lazy(() => import('./components/File/File'))
+const Summary = React.lazy(() => import('./components/Summary/Summary'))
+
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Switch>
+        <Route exact path='/' component={Home} />
+        <PrivateRoute exact path='/calendar' component={Calendar} />
+        <PrivateRoute exact path='/category' component={Category} />
+        <PrivateRoute exact path='/upload-file' component={File} />
+        <PrivateRoute exact path='/summary' component={Summary} />
+      </Switch>
+    </>
   );
 }
 
