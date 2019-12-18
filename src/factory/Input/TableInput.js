@@ -67,7 +67,7 @@ const TableInput = (props) => {
     case('select'):
 
         dynamicInputField = <FormControl style={input.style}>
-                              <InputLabel htmlFor="input-category" style={{top: '-15px'}}>{props[input.name].length > 1 ? '' : 'Select category'}</InputLabel>
+                              <InputLabel htmlFor="input-category" >{'Select category'}</InputLabel>
                               <Select
                                 value={props.category}
                                 onChange={props.handleInputChange}

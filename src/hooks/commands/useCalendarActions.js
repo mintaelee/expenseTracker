@@ -33,7 +33,7 @@ export const createExpense = dispatch => expenseData => {
 
 export const editExpense = dispatch => expenseData => {
     let expenseObj = {
-        id: expenseData.id,
+        id: expenseData._id,
         name: expenseData.name,
         amount: parseFloat(expenseData.amount),
         date: expenseData.date,

@@ -1,41 +1,5 @@
 const formArray = [
     {
-      input: {
-        type: 'text',
-        name: 'name',
-        id: 'input-name',
-        label: 'Name',
-        style: {
-            padding: '0px',
-            marginTop: '5px'
-        },
-      }
-    },
-    {
-      input: {
-        type: 'date',
-        name: 'date',
-        id: 'input-date',
-        label: 'Date',
-        style: {
-            padding: '0px',
-            marginTop: '5px'
-        },
-      }
-    },
-    {
-      input: {
-        type: 'number',
-        name: 'amount',
-        id: 'input-amount',
-        label: 'Amount',
-        style: {
-            padding: '0px',
-            marginTop: '5px'
-        },
-      }
-    },
-    {
         input: {
             type: 'select',
             name: 'category',
@@ -46,7 +10,7 @@ const formArray = [
             helperText: 'Select category',
             style: {
                 padding: '0px',
-                marginTop: '15px'
+                width: '300px',
             },
             validators: ['required'],
             errorMessages: ['this field is required']
